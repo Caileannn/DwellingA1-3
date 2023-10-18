@@ -504,7 +504,7 @@ PrefabInstance:
     - target: {fileID: 8368971718801693441, guid: d524de9eb59112c409e4ad6dd2f290ff,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8756689838997106114, guid: d524de9eb59112c409e4ad6dd2f290ff,
         type: 3}
@@ -831,8 +831,9 @@ GameObject:
   - component: {fileID: 238862311}
   - component: {fileID: 238862310}
   - component: {fileID: 238862309}
+  - component: {fileID: 238862313}
   m_Layer: 0
-  m_Name: Ending (2)
+  m_Name: VX_Ending (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -846,8 +847,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238862307}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5799999, y: -3.53, z: 12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -974,6 +975,27 @@ VisualEffect:
         m_Overridden: 1
     m_Bool:
       m_Array: []
+--- !u!95 &238862313
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238862307}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &242219278
 GameObject:
   m_ObjectHideFlags: 0
@@ -1572,7 +1594,7 @@ PrefabInstance:
     - target: {fileID: 8368971718801693441, guid: d524de9eb59112c409e4ad6dd2f290ff,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8756689838997106114, guid: d524de9eb59112c409e4ad6dd2f290ff,
         type: 3}
@@ -1658,8 +1680,9 @@ GameObject:
   - component: {fileID: 256521893}
   - component: {fileID: 256521892}
   - component: {fileID: 256521891}
+  - component: {fileID: 256521895}
   m_Layer: 0
-  m_Name: Bed Struggle 2 Stand
+  m_Name: VX_Bed Struggle 2 Stand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1674,7 +1697,7 @@ Transform:
   m_GameObject: {fileID: 256521889}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.58, y: -3.53, z: 12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1728,7 +1751,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256521889}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1767,7 +1790,7 @@ VisualEffect:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256521889}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Asset: {fileID: 8926484042661614526, guid: e6b972d6f7a563a46bb7e214995e2997, type: 3}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
@@ -1801,6 +1824,27 @@ VisualEffect:
         m_Overridden: 1
     m_Bool:
       m_Array: []
+--- !u!95 &256521895
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256521889}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &289015369 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 30379267589028384, guid: 79b1ff48cad13284d82782d2b41baf26,
@@ -1958,7 +2002,7 @@ PrefabInstance:
     - target: {fileID: 3711387328668645654, guid: 4484f8c6c4cdf954fb98daf0084c5619,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3754238046215665458, guid: 4484f8c6c4cdf954fb98daf0084c5619,
         type: 3}
@@ -2380,8 +2424,9 @@ GameObject:
   - component: {fileID: 391232103}
   - component: {fileID: 391232102}
   - component: {fileID: 391232101}
+  - component: {fileID: 391232105}
   m_Layer: 0
-  m_Name: 3 Bed Pulls
+  m_Name: VX_3 Bed Pulls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2395,8 +2440,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 391232099}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5799999, y: -3.53, z: 12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2450,7 +2495,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 391232099}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -2489,7 +2534,7 @@ VisualEffect:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 391232099}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Asset: {fileID: 8926484042661614526, guid: e6b972d6f7a563a46bb7e214995e2997, type: 3}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
@@ -2523,6 +2568,27 @@ VisualEffect:
         m_Overridden: 1
     m_Bool:
       m_Array: []
+--- !u!95 &391232105
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391232099}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &394321416 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7535301072160414111, guid: d524de9eb59112c409e4ad6dd2f290ff,
@@ -2977,7 +3043,7 @@ PrefabInstance:
     - target: {fileID: 6607810154068601851, guid: 79b1ff48cad13284d82782d2b41baf26,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6608664845920626418, guid: 79b1ff48cad13284d82782d2b41baf26,
         type: 3}
@@ -3119,8 +3185,9 @@ GameObject:
   - component: {fileID: 667178180}
   - component: {fileID: 667178179}
   - component: {fileID: 667178178}
+  - component: {fileID: 667178182}
   m_Layer: 0
-  m_Name: Bed Edge Walk
+  m_Name: VX_Bed Edge Walk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3134,8 +3201,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667178176}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5799999, y: -3.53, z: 12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3262,6 +3329,27 @@ VisualEffect:
         m_Overridden: 1
     m_Bool:
       m_Array: []
+--- !u!95 &667178182
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667178176}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &796738746
 GameObject:
   m_ObjectHideFlags: 0
@@ -3275,8 +3363,9 @@ GameObject:
   - component: {fileID: 796738750}
   - component: {fileID: 796738749}
   - component: {fileID: 796738748}
+  - component: {fileID: 796738752}
   m_Layer: 0
-  m_Name: Bed Stand & Collapse (2)
+  m_Name: VX_Bed Stand & Collapse (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3290,8 +3379,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796738746}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5799999, y: -3.53, z: 12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3418,6 +3507,27 @@ VisualEffect:
         m_Overridden: 1
     m_Bool:
       m_Array: []
+--- !u!95 &796738752
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796738746}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &808443257
 GameObject:
   m_ObjectHideFlags: 0
@@ -3431,8 +3541,9 @@ GameObject:
   - component: {fileID: 808443261}
   - component: {fileID: 808443260}
   - component: {fileID: 808443259}
+  - component: {fileID: 808443263}
   m_Layer: 0
-  m_Name: Edit Edge Walk
+  m_Name: VX_Edit Edge Walk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3446,8 +3557,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808443257}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5799999, y: -3.53, z: 12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3574,6 +3685,27 @@ VisualEffect:
         m_Overridden: 1
     m_Bool:
       m_Array: []
+--- !u!95 &808443263
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808443257}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &816011123
 GameObject:
   m_ObjectHideFlags: 0
@@ -3926,6 +4058,22 @@ PlayableDirector:
     value: {fileID: 1211622315}
   - key: {fileID: -1440343908901595020, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
     value: {fileID: 1211622316}
+  - key: {fileID: -8644065527935994288, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 256521895}
+  - key: {fileID: -9029159126258463969, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 391232105}
+  - key: {fileID: -1311004902784233138, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 1499160618}
+  - key: {fileID: -5020942723013917730, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 796738752}
+  - key: {fileID: -5868349001441335505, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 667178182}
+  - key: {fileID: -6103833804663271972, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 808443263}
+  - key: {fileID: -2290439197822488993, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 1294644539}
+  - key: {fileID: -2496774618853181104, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 238862313}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1041483980
@@ -4363,7 +4511,7 @@ PrefabInstance:
     - target: {fileID: 6607810154068601851, guid: 79b1ff48cad13284d82782d2b41baf26,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6608664845920626418, guid: 79b1ff48cad13284d82782d2b41baf26,
         type: 3}
@@ -4508,8 +4656,9 @@ GameObject:
   - component: {fileID: 1294644537}
   - component: {fileID: 1294644536}
   - component: {fileID: 1294644535}
+  - component: {fileID: 1294644539}
   m_Layer: 0
-  m_Name: Ending (1)
+  m_Name: VX_Ending (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4523,8 +4672,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294644533}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5799999, y: -3.53, z: 12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4651,6 +4800,27 @@ VisualEffect:
         m_Overridden: 1
     m_Bool:
       m_Array: []
+--- !u!95 &1294644539
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294644533}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1296219974
 GameObject:
   m_ObjectHideFlags: 0
@@ -4671,7 +4841,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1296219975
 Transform:
   m_ObjectHideFlags: 0
@@ -4695,7 +4865,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296219974}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -4839,9 +5009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 1296219979}
-  - {fileID: 1296219978}
+  m_Bindings: []
   m_VisualEffect: {fileID: 1296219977}
 --- !u!1 &1322166912
 GameObject:
@@ -5247,7 +5415,7 @@ PrefabInstance:
     - target: {fileID: 4802090609104384972, guid: ea23f780c324e0b44b9e4598d6096fc4,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5607092712902133653, guid: ea23f780c324e0b44b9e4598d6096fc4,
         type: 3}
@@ -5571,8 +5739,9 @@ GameObject:
   - component: {fileID: 1499160616}
   - component: {fileID: 1499160615}
   - component: {fileID: 1499160614}
+  - component: {fileID: 1499160618}
   m_Layer: 0
-  m_Name: Bed Stand & Collapse (1)
+  m_Name: VX_Bed Stand & Collapse (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5586,8 +5755,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499160612}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5799999, y: -3.53, z: 12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5714,6 +5883,27 @@ VisualEffect:
         m_Overridden: 1
     m_Bool:
       m_Array: []
+--- !u!95 &1499160618
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499160612}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1525926402 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3259838051111800089, guid: ea23f780c324e0b44b9e4598d6096fc4,
@@ -6217,7 +6407,7 @@ PrefabInstance:
     - target: {fileID: 1220265166223710384, guid: 46166f60d4bee334aa2d365999edc8d6,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1536754687099305551, guid: 46166f60d4bee334aa2d365999edc8d6,
         type: 3}
@@ -7044,13 +7234,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2109183821}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.41105366, y: 0.3103638, z: -0.62152964, w: 0.59026283}
-  m_LocalPosition: {x: 1.97, y: 7.87, z: -0.37}
+  m_LocalRotation: {x: 0.67829394, y: 0.61478513, z: -0.32351798, w: 0.23935911}
+  m_LocalPosition: {x: 3.73, y: 4.75, z: 1.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1225025837}
-  m_LocalEulerAnglesHint: {x: 60.582, y: -17.118, z: -103.005}
+  m_LocalEulerAnglesHint: {x: 46.261, y: -167.93, z: -259.20502}
 --- !u!114 &2109183823
 MonoBehaviour:
   m_ObjectHideFlags: 0
