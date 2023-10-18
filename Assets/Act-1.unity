@@ -4976,7 +4976,7 @@ Transform:
   m_GameObject: {fileID: 667178176}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5799999, y: -3.53, z: 12}
+  m_LocalPosition: {x: -2.89, y: -4.25, z: 12.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5079,13 +5079,82 @@ VisualEffect:
   m_ResourceVersion: 1
   m_PropertySheet:
     m_Float:
-      m_Array: []
+      m_Array:
+      - m_Value: 1000
+        m_Name: Point Rate
+        m_Overridden: 1
+      - m_Value: -0.02
+        m_Name: Noise
+        m_Overridden: 1
+      - m_Value: 0.49
+        m_Name: Turbulences
+        m_Overridden: 1
+      - m_Value: 0.39
+        m_Name: Turbulences Speed
+        m_Overridden: 1
+      - m_Value: 23.71
+        m_Name: Turbulences Frequency
+        m_Overridden: 1
+      - m_Value: 1.5
+        m_Name: Pont Lifetime Min
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: Point Lifetime Max
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Point Size Ratio
+        m_Overridden: 1
+      - m_Value: 10000
+        m_Name: Line Rate
+        m_Overridden: 1
+      - m_Value: 0.03
+        m_Name: Line Range
+        m_Overridden: 1
+      - m_Value: 0.3
+        m_Name: Line Thickness
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Line Point Size
+        m_Overridden: 1
+      - m_Value: 0.001
+        m_Name: Point Size Small
+        m_Overridden: 1
+      - m_Value: 1000
+        m_Name: Antenna Rate
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Point Size
+        m_Overridden: 1
+      - m_Value: 2
+        m_Name: Trail Lifetime
+        m_Overridden: 1
+      - m_Value: 8.46
+        m_Name: Trail Count
+        m_Overridden: 1
+      - m_Value: 0.23
+        m_Name: Turbulences Ratio
+        m_Overridden: 1
+      - m_Value: 0.1
+        m_Name: Bubble Size
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
       m_Array: []
     m_Vector4f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 1, y: 1, z: 1, w: 1}
+        m_Name: Line Color
+        m_Overridden: 1
+      - m_Value: {x: 1, y: 1, z: 1, w: 1}
+        m_Name: Trail Color
+        m_Overridden: 1
+      - m_Value: {x: 1, y: 1, z: 1, w: 1}
+        m_Name: Point Color
+        m_Overridden: 1
+      - m_Value: {x: 0, y: 0, z: 0, w: 1}
+        m_Name: Bubble Color
+        m_Overridden: 1
     m_Uint:
       m_Array: []
     m_Int:
@@ -5102,7 +5171,22 @@ VisualEffect:
         m_Name: PositionMap
         m_Overridden: 1
     m_Bool:
-      m_Array: []
+      m_Array:
+      - m_Value: 0
+        m_Name: Toggle Falling
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: Toggle Antenna
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Trail
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Bubble
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: Toggle Line
+        m_Overridden: 1
 --- !u!95 &667178182
 Animator:
   serializedVersion: 5
@@ -5208,7 +5292,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796738746}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -5247,7 +5331,7 @@ VisualEffect:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796738746}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Asset: {fileID: 8926484042661614526, guid: e6b972d6f7a563a46bb7e214995e2997, type: 3}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
@@ -5301,11 +5385,14 @@ VisualEffect:
       m_Array: []
     m_Vector3f:
       m_Array:
-      - m_Value: {x: 0, y: 0, z: 0}
+      - m_Value: {x: 0, y: -3.9401486, z: 0}
         m_Name: Gravity Point
         m_Overridden: 1
     m_Vector4f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 0.009433985, y: 0.008476755, z: 0.007342488, w: 1}
+        m_Name: Line Point Color
+        m_Overridden: 1
     m_Uint:
       m_Array: []
     m_Int:
@@ -5495,13 +5582,55 @@ VisualEffect:
   m_ResourceVersion: 1
   m_PropertySheet:
     m_Float:
-      m_Array: []
+      m_Array:
+      - m_Value: 25
+        m_Name: Antenna Rate
+        m_Overridden: 1
+      - m_Value: 10000
+        m_Name: Line Rate
+        m_Overridden: 1
+      - m_Value: 0.03
+        m_Name: Line Range
+        m_Overridden: 1
+      - m_Value: 0.3
+        m_Name: Line Thickness
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Line Point Size
+        m_Overridden: 1
+      - m_Value: 0.1
+        m_Name: Antenna Point Size
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Point Rate
+        m_Overridden: 1
+      - m_Value: 0.1
+        m_Name: Bubble Size
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: Bubble Alpha
+        m_Overridden: 1
+      - m_Value: 0.29
+        m_Name: Bubble Turbulences Frequency
+        m_Overridden: 1
+      - m_Value: 0.89
+        m_Name: Bubble Turbulences
+        m_Overridden: 1
+      - m_Value: 6.25
+        m_Name: Bubble Lifetime
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 0, y: 0.27, z: 0}
+        m_Name: Bubble Force
+        m_Overridden: 1
     m_Vector4f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 1, y: 0.9844656, z: 0.6839622, w: 1}
+        m_Name: Bubble Color
+        m_Overridden: 1
     m_Uint:
       m_Array: []
     m_Int:
@@ -5518,7 +5647,16 @@ VisualEffect:
         m_Name: PositionMap
         m_Overridden: 1
     m_Bool:
-      m_Array: []
+      m_Array:
+      - m_Value: 1
+        m_Name: Toggle Bubble
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Trail
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Falling
+        m_Overridden: 1
 --- !u!95 &808443263
 Animator:
   serializedVersion: 5
@@ -5900,6 +6038,12 @@ PlayableDirector:
     value: {fileID: 1499160618}
   - key: {fileID: 8820675792196880631, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
     value: {fileID: 796738752}
+  - key: {fileID: -8279485232644013673, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 667178182}
+  - key: {fileID: -4730353255308117155, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 808443263}
+  - key: {fileID: -4208197726554042879, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 1294644539}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1041483980
@@ -6953,7 +7097,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294644533}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -6992,7 +7136,7 @@ VisualEffect:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294644533}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Asset: {fileID: 8926484042661614526, guid: e6b972d6f7a563a46bb7e214995e2997, type: 3}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
@@ -7002,11 +7146,47 @@ VisualEffect:
   m_ResourceVersion: 1
   m_PropertySheet:
     m_Float:
-      m_Array: []
+      m_Array:
+      - m_Value: 100000
+        m_Name: Point Rate
+        m_Overridden: 1
+      - m_Value: 5
+        m_Name: Point Lifetime Max
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Line Range
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Line Thickness
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Line Point Size
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Noise
+        m_Overridden: 1
+      - m_Value: 0.16
+        m_Name: Turbulences
+        m_Overridden: 1
+      - m_Value: 1.61
+        m_Name: Turbulences Speed
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Turbulences Ratio
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Normal Offset
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Antenna Rate
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 0, y: 0, z: 0}
+        m_Name: Gravity Point
+        m_Overridden: 1
     m_Vector4f:
       m_Array: []
     m_Uint:
@@ -7021,11 +7201,29 @@ VisualEffect:
       m_Array: []
     m_NamedObject:
       m_Array:
-      - m_Value: {fileID: 2800000, guid: 276d9e395ae18fe40a9b4988549f2349, type: 3}
+      - m_Value: {fileID: 0}
         m_Name: PositionMap
         m_Overridden: 1
+      - m_Value: {fileID: 0}
+        m_Name: VelocityMap
+        m_Overridden: 1
     m_Bool:
-      m_Array: []
+      m_Array:
+      - m_Value: 0
+        m_Name: Toggle Bubble
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Trail
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: Toggle Antenna
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Falling
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Line
+        m_Overridden: 1
 --- !u!95 &1294644539
 Animator:
   serializedVersion: 5
