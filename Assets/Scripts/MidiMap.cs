@@ -3,9 +3,9 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.VFX;
 
+
 public class MidiMap : MonoBehaviour
 {
-
     public VisualEffect m_VFX;
 
     // Point VFX Parameters
@@ -35,36 +35,32 @@ public class MidiMap : MonoBehaviour
     private int m_BToggle;
 
 
-    float f_PLifeMax = 0f;
-    float f_PRate = 0f;
-    float f_PNoise = 0f;
-    float f_PSpeed = 0f;
-    float f_PRatio = 0f;
+    float f_PLifeMax = 20f;
+    float f_PRate = 70000f;
+    float f_PNoise = 5f;
+    float f_PSpeed = 5f;
+    float f_PRatio = 1f;
     float f_PGravity = 0f;
-    float f_PFreq = 0f;
-    float f_PTurb = 0f;
+    float f_PFreq = 5f;
+    float f_PTurb = 5f;
 
-    float f_LRate = 0f;
-    float f_LLifetime = 0f;
+    float f_LRate = 10000f;
+    float f_LLifetime = 5f;
     bool f_LToggle = false;
-    float f_LRange = 0f;
-    float f_LThickness = 0f;
+    float f_LRange = 1f;
+    float f_LThickness = 1f;
 
-    float f_BSize = 0f;
-    float f_BRate = 0f;
-    float f_BFreq = 0f;
-    float f_BLifetime = 0f;
-    float f_BTurb = 0f;
+    float f_BSize = 1f;
+    float f_BRate = 10000f;
+    float f_BFreq = 10f;
+    float f_BLifetime = 10f;
+    float f_BTurb = 10f;
     bool f_BToggle = false;
 
     float f_BForceX = 0f;
     float f_BForceY = 0f;
     float f_BForceZ = 0f;
     
-
-
-
-
     float testMIDI = 0f;
     float testMIDInoise = 0f;
 
@@ -159,6 +155,13 @@ public class MidiMap : MonoBehaviour
                     m_PotIn[device.controlNumber - 16] = (float)change;
                 }
 
+                //Debug.Log(device.controlNumber);
+
+                if (device.controlNumber == 32)
+                {
+                    f_PGravity = -9.8f * (float)change;
+                }
+
 
             };
         };
@@ -168,12 +171,9 @@ public class MidiMap : MonoBehaviour
 
     void Update()
     {
-        foreach (var item in m_PotIn)
-        {
-            Debug.Log(item);
-        }
-        SetupVFX();
+        // Debug.Log(m_Slider);    
 
+        SetupVFXTest();
     }
 
     void SetupVFX()
@@ -199,6 +199,54 @@ public class MidiMap : MonoBehaviour
         m_VFX.SetBool(m_BToggle, f_BToggle);
 
         m_VFX.SetVector3(m_BForce, new Vector3(f_BForceX, f_BForceY, f_BForceZ));
+    }
 
+    void SetupVFXTest()
+    {
+        if(m_Slider == 0)
+        {
+            // Points 
+            m_VFX.SetFloat(m_PRate, f_PRate * m_SliderIn[0]);
+            m_VFX.SetFloat(m_PLifeMax, f_PLifeMax * m_SliderIn[1]);
+            m_VFX.SetFloat(m_PNoise, f_PNoise * m_SliderIn[2]);
+            m_VFX.SetFloat(m_PTurb, f_PTurb * m_SliderIn[3]);
+            m_VFX.SetFloat(m_PSpeed, f_PSpeed * m_SliderIn[4]);
+            m_VFX.SetFloat(m_PRatio, f_PRatio * m_SliderIn[5]);
+            m_VFX.SetFloat(m_PSpeed, f_PSpeed * m_SliderIn[6]);
+            m_VFX.SetFloat(m_PFreq, f_PFreq * m_SliderIn[7]);
+            m_VFX.SetVector3(m_PGravity, new Vector3(0, f_PGravity, 0));
+
+            
+
+        }
+        if (m_Slider == 1)
+        {
+            // Points 
+            m_VFX.SetBool(m_LToggle, true);
+            m_VFX.SetFloat(m_LRate, f_LRate * m_SliderIn[0]);
+            m_VFX.SetFloat(m_LLifetime, f_LLifetime * m_SliderIn[1]);
+            m_VFX.SetFloat(m_LRange, f_LRange * m_SliderIn[2]);
+            m_VFX.SetFloat(m_LThickness, f_LThickness * m_SliderIn[3]);
+            //m_VFX.SetFloat(m_PSpeed, f_PSpeed * m_SliderIn[4]);
+            //m_VFX.SetFloat(m_PRatio, f_PRatio * m_SliderIn[5]);
+            //m_VFX.SetFloat(m_PSpeed, f_PSpeed * m_SliderIn[6]);
+            //m_VFX.SetFloat(m_PFreq, f_PFreq * m_SliderIn[7]);
+
+            
+
+
+        }
+        if (m_Slider == 2)
+        {
+            m_VFX.SetBool(m_BToggle, true);
+            m_VFX.SetFloat(m_BRate, f_BRate * m_SliderIn[0]);
+            m_VFX.SetFloat(m_BSize, f_BSize * m_SliderIn[1]);
+            m_VFX.SetFloat(m_BFreq, f_BFreq * m_SliderIn[2]);
+            m_VFX.SetFloat(m_BLifetime, f_BLifetime * m_SliderIn[3]);
+            m_VFX.SetFloat(m_BTurb, f_BTurb * m_SliderIn[4]);
+            m_VFX.SetVector3(m_BForce, new Vector3(0, -9.8f * m_SliderIn[5], 0));
+
+
+        }
     }
 }
