@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.VFX;
 
-
+[ExecuteInEditMode]
 public class MidiMap : MonoBehaviour
 {
     public VisualEffect m_VFX;
@@ -155,12 +155,13 @@ public class MidiMap : MonoBehaviour
                     m_PotIn[device.controlNumber - 16] = (float)change;
                 }
 
-                //Debug.Log(device.controlNumber);
+                Debug.Log(device.controlNumber);
 
                 if (device.controlNumber == 32)
                 {
                     f_PGravity = -9.8f * (float)change;
                 }
+
 
 
             };
@@ -174,31 +175,6 @@ public class MidiMap : MonoBehaviour
         // Debug.Log(m_Slider);    
 
         SetupVFXTest();
-    }
-
-    void SetupVFX()
-    {
-        var eventAttribute = m_VFX.CreateVFXEventAttribute();
-        m_VFX.SetFloat(m_PRate, f_PRate);
-        m_VFX.SetFloat(m_PLifeMax, f_PLifeMax);
-        m_VFX.SetFloat(m_PNoise, f_PNoise);
-        m_VFX.SetFloat(m_PTurb, f_PTurb);
-        m_VFX.SetFloat(m_PSpeed, f_PSpeed);
-
-        m_VFX.SetFloat(m_LRate, f_LRate);
-        m_VFX.SetFloat(m_LLifetime, f_LLifetime);
-        m_VFX.SetBool(m_LToggle, f_LToggle);
-        m_VFX.SetFloat(m_LRange, f_LRange);
-        m_VFX.SetFloat(m_LThickness, f_LThickness);
-
-        m_VFX.SetFloat(m_BSize, f_BSize);
-        m_VFX.SetFloat(m_BRate, f_BRate);
-        m_VFX.SetFloat(m_BFreq, f_BFreq);
-        m_VFX.SetFloat(m_BLifetime, f_BLifetime);
-        m_VFX.SetFloat(m_BTurb, f_BTurb);
-        m_VFX.SetBool(m_BToggle, f_BToggle);
-
-        m_VFX.SetVector3(m_BForce, new Vector3(f_BForceX, f_BForceY, f_BForceZ));
     }
 
     void SetupVFXTest()
