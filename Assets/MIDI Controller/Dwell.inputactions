@@ -791,6 +791,361 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "MIDI",
+            "id": "0f9fca80-b0be-4ae0-b2b4-c0fe98322788",
+            "actions": [
+                {
+                    "name": "Slider_1",
+                    "type": "Value",
+                    "id": "c58e2e8b-1886-41d0-977d-1346eb550456",
+                    "expectedControlType": "MidiValue",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Slider_2",
+                    "type": "Value",
+                    "id": "d0a8521b-25f5-4b9d-bf44-303b8d04bd3d",
+                    "expectedControlType": "MidiValue",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Slider_3",
+                    "type": "Value",
+                    "id": "3b6c38dc-46d0-43e0-8d0c-871142fea3d8",
+                    "expectedControlType": "MidiValue",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Slider_4",
+                    "type": "Value",
+                    "id": "ef91cd53-93a6-4d5e-a392-50e8ba0843da",
+                    "expectedControlType": "MidiValue",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Slider_5",
+                    "type": "Value",
+                    "id": "19c01748-248f-4fab-b177-ddfa1569e71f",
+                    "expectedControlType": "MidiValue",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Slider_6",
+                    "type": "Value",
+                    "id": "93f002a2-36f9-4e97-801a-4a4425ecdd47",
+                    "expectedControlType": "MidiValue",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Slider_7",
+                    "type": "Value",
+                    "id": "9b0e60a3-0346-4903-81b5-bcad44485510",
+                    "expectedControlType": "MidiValue",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Slider_8",
+                    "type": "Value",
+                    "id": "20e3d12e-5b53-4e0b-a0d9-247f97d841de",
+                    "expectedControlType": "MidiValue",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3a5a1da7-f31e-4404-8023-106af589a7b0",
+                    "path": "<MidiDevice>/control000",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "95ff6365-beae-46a6-8090-037eb42ae310",
+                    "path": "<MidiDevice>/control016",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "50c52b7a-7992-47ba-8250-cdd570c3d10e",
+                    "path": "<MidiDevice>/control032",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cf52f128-71e7-4793-afb7-37cf72965c08",
+                    "path": "<MidiDevice>/control048",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5ae89f3b-b2e7-475e-9edf-f6f10ba344d9",
+                    "path": "<MidiDevice>/control064",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "de133fb9-2c8a-4776-8e22-9294a4800730",
+                    "path": "<MidiDevice>/control001",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8208496d-f2ec-471a-9518-efa361135718",
+                    "path": "<MidiDevice>/control017",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a60f118f-5b91-412c-a52f-2f927ea45a1a",
+                    "path": "<MidiDevice>/control033",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "34195748-ca29-4506-9857-0b053510e2e9",
+                    "path": "<MidiDevice>/control049",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9d4477ed-3348-4837-844a-928d8b19212a",
+                    "path": "<MidiDevice>/control065",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5145a846-585e-489b-951a-77f3c6d85c76",
+                    "path": "<MidiDevice>/control002",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e3bbcd48-039c-4dac-994d-08ebc5a647c6",
+                    "path": "<MidiDevice>/control018",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4d20c00d-4576-4624-98e3-30b91c6b2ade",
+                    "path": "<MidiDevice>/control034",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c5d068a0-1350-4c34-8315-25f3dacd9c39",
+                    "path": "<MidiDevice>/control050",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "78d3035e-d31d-490e-8f66-909bb0c18fa2",
+                    "path": "<MidiDevice>/control066",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "861abe0d-a237-45fe-8bd2-ac9126d0764a",
+                    "path": "<MidiDevice>/control003",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "33a3173d-84ba-483d-a913-4ae1b939f2db",
+                    "path": "<MidiDevice>/control019",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ac8f0c67-15bb-430f-87af-ba4a9f13547a",
+                    "path": "<MidiDevice>/control004",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_5",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6fdf0f03-5654-4dba-865f-71651e486fcc",
+                    "path": "<MidiDevice>/control020",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_5",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ad17a53c-b1be-427a-8f89-bb93fe696710",
+                    "path": "<MidiDevice>/control005",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_6",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "888945fa-2831-4673-a1b2-f87c92cd1036",
+                    "path": "<MidiDevice>/control021",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_6",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b50d107b-4ad9-4b37-b107-13b44d0804b4",
+                    "path": "<MidiDevice>/control006",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_7",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cbdbb37d-d72d-405b-8702-666cede25873",
+                    "path": "<MidiDevice>/control022",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_7",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "64fe9f56-6d6b-445c-ae34-ac22b99fee64",
+                    "path": "<MidiDevice>/control007",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_8",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b0edbfcd-f383-4056-882e-0ba1551ff2d8",
+                    "path": "<MidiDevice>/control023",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "MIDI",
+                    "action": "Slider_8",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
