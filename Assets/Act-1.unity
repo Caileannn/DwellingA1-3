@@ -2844,7 +2844,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &256521890
 Transform:
   m_ObjectHideFlags: 0
@@ -2897,8 +2897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 256521891}
+  m_Bindings: []
   m_VisualEffect: {fileID: 256521894}
 --- !u!73398921 &256521893
 VFXRenderer:
@@ -2908,7 +2907,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256521889}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -3005,6 +3004,9 @@ VisualEffect:
         m_Overridden: 1
       - m_Value: 0.01
         m_Name: Pont Lifetime Min
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: Alpha
         m_Overridden: 1
     m_Vector2f:
       m_Array: []
@@ -3269,22 +3271,22 @@ PrefabInstance:
     - target: {fileID: 2133313212053547499, guid: 1b0bb0644bb33e046a4d0825f606a6a2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.6519549
+      value: 0.157
       objectReference: {fileID: 0}
     - target: {fileID: 2133313212053547499, guid: 1b0bb0644bb33e046a4d0825f606a6a2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.286468
+      value: -2.154
       objectReference: {fileID: 0}
     - target: {fileID: 2133313212053547499, guid: 1b0bb0644bb33e046a4d0825f606a6a2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.1606474
+      value: 0.561
       objectReference: {fileID: 0}
     - target: {fileID: 2133313212053547499, guid: 1b0bb0644bb33e046a4d0825f606a6a2,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.95712984
       objectReference: {fileID: 0}
     - target: {fileID: 2133313212053547499, guid: 1b0bb0644bb33e046a4d0825f606a6a2,
         type: 3}
@@ -3294,7 +3296,7 @@ PrefabInstance:
     - target: {fileID: 2133313212053547499, guid: 1b0bb0644bb33e046a4d0825f606a6a2,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.2896591
       objectReference: {fileID: 0}
     - target: {fileID: 2133313212053547499, guid: 1b0bb0644bb33e046a4d0825f606a6a2,
         type: 3}
@@ -3309,7 +3311,7 @@ PrefabInstance:
     - target: {fileID: 2133313212053547499, guid: 1b0bb0644bb33e046a4d0825f606a6a2,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -33.675
       objectReference: {fileID: 0}
     - target: {fileID: 2133313212053547499, guid: 1b0bb0644bb33e046a4d0825f606a6a2,
         type: 3}
@@ -4137,7 +4139,7 @@ VisualEffect:
       - m_Value: 0.19
         m_Name: Turbulences
         m_Overridden: 1
-      - m_Value: 0.37
+      - m_Value: 0.07
         m_Name: Turbulences Speed
         m_Overridden: 1
       - m_Value: 6.82
@@ -6284,6 +6286,9 @@ VisualEffect:
         m_Overridden: 1
       - m_Value: 0
         m_Name: Line Rate
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: Alpha
         m_Overridden: 1
     m_Vector2f:
       m_Array: []
@@ -12949,6 +12954,10 @@ PlayableDirector:
     value: {fileID: 1036136755}
   - key: {fileID: -5439507166988578824, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
     value: {fileID: 730477390}
+  - key: {fileID: 4705803204370629275, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 1296219981}
+  - key: {fileID: 5273871587476679015, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 1296219974}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1041483980
@@ -16256,13 +16265,14 @@ GameObject:
   - component: {fileID: 1296219980}
   - component: {fileID: 1296219979}
   - component: {fileID: 1296219978}
+  - component: {fileID: 1296219981}
   m_Layer: 0
   m_Name: Bed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1296219975
 Transform:
   m_ObjectHideFlags: 0
@@ -16286,7 +16296,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296219974}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -16336,12 +16346,12 @@ VisualEffect:
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 10000
+      - m_Value: 30000
         m_Name: Dots Rate
-        m_Overridden: 0
+        m_Overridden: 1
       - m_Value: 0
         m_Name: Dots Scatter
-        m_Overridden: 0
+        m_Overridden: 1
       - m_Value: 100
         m_Name: Quad Rate
         m_Overridden: 1
@@ -16357,6 +16367,27 @@ VisualEffect:
       - m_Value: 0.1
         m_Name: Quad Scatter
         m_Overridden: 0
+      - m_Value: 0
+        m_Name: Plexus Rate
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: T_Ratio
+        m_Overridden: 1
+      - m_Value: 0.12749857
+        m_Name: T_Count
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: T_Speed
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: T_Freq
+        m_Overridden: 1
+      - m_Value: 0.50650144
+        m_Name: Noise
+        m_Overridden: 1
+      - m_Value: 7.64
+        m_Name: T_Drag
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
@@ -16364,7 +16395,7 @@ VisualEffect:
       - m_Value: {x: 0.29099995, y: 0.8972631, z: -8.512507}
         m_Name: Target 1
         m_Overridden: 1
-      - m_Value: {x: 3.3639998, y: 1.2099996, z: -0.7299986}
+      - m_Value: {x: 3.3639998, y: 1.2099996, z: -0.72999907}
         m_Name: Target 2
         m_Overridden: 1
     m_Vector4f:
@@ -16434,6 +16465,27 @@ MonoBehaviour:
   - {fileID: 1296219979}
   - {fileID: 1296219978}
   m_VisualEffect: {fileID: 1296219977}
+--- !u!95 &1296219981
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296219974}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1332999648
 PrefabInstance:
   m_ObjectHideFlags: 0
