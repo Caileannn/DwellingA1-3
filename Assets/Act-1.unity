@@ -299,6 +299,9 @@ VisualEffect:
       - m_Value: 0
         m_Name: Turbulences Ratio
         m_Overridden: 1
+      - m_Value: 100
+        m_Name: Antenna Rate
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
@@ -1732,6 +1735,9 @@ VisualEffect:
       - m_Value: 1
         m_Name: Toggle Bubble
         m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Line
+        m_Overridden: 1
 --- !u!95 &238862313
 Animator:
   serializedVersion: 5
@@ -2844,7 +2850,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &256521890
 Transform:
   m_ObjectHideFlags: 0
@@ -2897,7 +2903,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 256521891}
   m_VisualEffect: {fileID: 256521894}
 --- !u!73398921 &256521893
 VFXRenderer:
@@ -2907,7 +2914,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256521889}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -8414,6 +8421,9 @@ VisualEffect:
       - m_Value: 0.1
         m_Name: Bubble Size
         m_Overridden: 1
+      - m_Value: 0.5
+        m_Name: Antenna Size
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
@@ -8510,6 +8520,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -2.192793
+      objectReference: {fileID: 0}
+    - target: {fileID: 341646215130927857, guid: 457038acb75836d4c99d0cb75066b35c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 418587087911703042, guid: 457038acb75836d4c99d0cb75066b35c,
         type: 3}
@@ -8929,7 +8944,23 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1376013873531486874, guid: 457038acb75836d4c99d0cb75066b35c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 678952685}
+    - targetCorrespondingSourceObject: {fileID: 1376013873531486874, guid: 457038acb75836d4c99d0cb75066b35c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 678952684}
+    - targetCorrespondingSourceObject: {fileID: 1376013873531486874, guid: 457038acb75836d4c99d0cb75066b35c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 678952683}
+    - targetCorrespondingSourceObject: {fileID: 1376013873531486874, guid: 457038acb75836d4c99d0cb75066b35c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 678952682}
   m_SourcePrefab: {fileID: 100100000, guid: 457038acb75836d4c99d0cb75066b35c, type: 3}
 --- !u!4 &678952678 stripped
 Transform:
@@ -8949,6 +8980,175 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 678952677}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &678952681 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5715317590902498089, guid: 457038acb75836d4c99d0cb75066b35c,
+    type: 3}
+  m_PrefabInstance: {fileID: 678952677}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678952679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8be8853279617ea196652fe43520855, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &678952682
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678952679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a8a30692aafc9a45986bcae574256b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _positionMapProperty:
+    m_Name: PositionMap
+  _bindVelocityMap: 1
+  _velocityMapProperty:
+    m_Name: VelocityMap
+  _bindNormalMap: 0
+  _normalMapProperty:
+    m_Name: NormalMap
+  _bindVertexCount: 0
+  _vertexCountProperty:
+    m_Name: VertexCount
+  Target: {fileID: 678952681}
+--- !u!114 &678952683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678952679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 678952682}
+  m_VisualEffect: {fileID: 678952684}
+--- !u!2083052967 &678952684
+VisualEffect:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678952679}
+  m_Enabled: 1
+  m_Asset: {fileID: 8926484042661614526, guid: e6b972d6f7a563a46bb7e214995e2997, type: 3}
+  m_InitialEventName: OnPlay
+  m_InitialEventNameOverriden: 0
+  m_StartSeed: 0
+  m_ResetSeedOnPlay: 1
+  m_AllowInstancing: 1
+  m_ResourceVersion: 1
+  m_PropertySheet:
+    m_Float:
+      m_Array:
+      - m_Value: 0.05
+        m_Name: Bubble Size
+        m_Overridden: 1
+      - m_Value: 117.25
+        m_Name: Bubble Rate
+        m_Overridden: 1
+      - m_Value: 42.1
+        m_Name: Trail Count
+        m_Overridden: 1
+      - m_Value: 29772.299
+        m_Name: Point Rate
+        m_Overridden: 1
+      - m_Value: 20
+        m_Name: Point Lifetime Max
+        m_Overridden: 1
+      - m_Value: 0.75
+        m_Name: Turbulences
+        m_Overridden: 1
+    m_Vector2f:
+      m_Array: []
+    m_Vector3f:
+      m_Array: []
+    m_Vector4f:
+      m_Array: []
+    m_Uint:
+      m_Array: []
+    m_Int:
+      m_Array: []
+    m_Matrix4x4f:
+      m_Array: []
+    m_AnimationCurve:
+      m_Array: []
+    m_Gradient:
+      m_Array: []
+    m_NamedObject:
+      m_Array:
+      - m_Value: {fileID: 0}
+        m_Name: PositionMap
+        m_Overridden: 1
+      - m_Value: {fileID: 0}
+        m_Name: VelocityMap
+        m_Overridden: 1
+    m_Bool:
+      m_Array:
+      - m_Value: 0
+        m_Name: Toggle Antenna
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Falling
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Trail
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Line
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Bubble
+        m_Overridden: 1
+--- !u!73398921 &678952685
+VFXRenderer:
+  serializedVersion: 1
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678952679}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1001 &730477389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10869,7 +11069,7 @@ VisualEffect:
       - m_Value: 0.26
         m_Name: Line Range
         m_Overridden: 1
-      - m_Value: 0.01
+      - m_Value: 0.04
         m_Name: Line Thickness
         m_Overridden: 1
       - m_Value: 0
@@ -12064,6 +12264,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -2.192793
       objectReference: {fileID: 0}
+    - target: {fileID: 341646215130927857, guid: 457038acb75836d4c99d0cb75066b35c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 418587087911703042, guid: 457038acb75836d4c99d0cb75066b35c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12482,7 +12687,23 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1376013873531486874, guid: 457038acb75836d4c99d0cb75066b35c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1006823080}
+    - targetCorrespondingSourceObject: {fileID: 1376013873531486874, guid: 457038acb75836d4c99d0cb75066b35c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1006823079}
+    - targetCorrespondingSourceObject: {fileID: 1376013873531486874, guid: 457038acb75836d4c99d0cb75066b35c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1006823078}
+    - targetCorrespondingSourceObject: {fileID: 1376013873531486874, guid: 457038acb75836d4c99d0cb75066b35c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1006823077}
   m_SourcePrefab: {fileID: 100100000, guid: 457038acb75836d4c99d0cb75066b35c, type: 3}
 --- !u!4 &1006823073 stripped
 Transform:
@@ -12502,6 +12723,175 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 1006823072}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1006823076 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5715317590902498089, guid: 457038acb75836d4c99d0cb75066b35c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1006823072}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006823074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8be8853279617ea196652fe43520855, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1006823077
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006823074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a8a30692aafc9a45986bcae574256b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _positionMapProperty:
+    m_Name: PositionMap
+  _bindVelocityMap: 1
+  _velocityMapProperty:
+    m_Name: VelocityMap
+  _bindNormalMap: 0
+  _normalMapProperty:
+    m_Name: NormalMap
+  _bindVertexCount: 0
+  _vertexCountProperty:
+    m_Name: VertexCount
+  Target: {fileID: 1006823076}
+--- !u!114 &1006823078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006823074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 1006823077}
+  m_VisualEffect: {fileID: 1006823079}
+--- !u!2083052967 &1006823079
+VisualEffect:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006823074}
+  m_Enabled: 1
+  m_Asset: {fileID: 8926484042661614526, guid: e6b972d6f7a563a46bb7e214995e2997, type: 3}
+  m_InitialEventName: OnPlay
+  m_InitialEventNameOverriden: 0
+  m_StartSeed: 0
+  m_ResetSeedOnPlay: 1
+  m_AllowInstancing: 1
+  m_ResourceVersion: 1
+  m_PropertySheet:
+    m_Float:
+      m_Array:
+      - m_Value: 0.05
+        m_Name: Bubble Size
+        m_Overridden: 1
+      - m_Value: 117.25
+        m_Name: Bubble Rate
+        m_Overridden: 1
+      - m_Value: 42.1
+        m_Name: Trail Count
+        m_Overridden: 1
+      - m_Value: 3.1950223
+        m_Name: Point Rate
+        m_Overridden: 1
+      - m_Value: 20
+        m_Name: Point Lifetime Max
+        m_Overridden: 1
+      - m_Value: 0.75
+        m_Name: Turbulences
+        m_Overridden: 1
+    m_Vector2f:
+      m_Array: []
+    m_Vector3f:
+      m_Array: []
+    m_Vector4f:
+      m_Array: []
+    m_Uint:
+      m_Array: []
+    m_Int:
+      m_Array: []
+    m_Matrix4x4f:
+      m_Array: []
+    m_AnimationCurve:
+      m_Array: []
+    m_Gradient:
+      m_Array: []
+    m_NamedObject:
+      m_Array:
+      - m_Value: {fileID: 0}
+        m_Name: PositionMap
+        m_Overridden: 1
+      - m_Value: {fileID: 0}
+        m_Name: VelocityMap
+        m_Overridden: 1
+    m_Bool:
+      m_Array:
+      - m_Value: 0
+        m_Name: Toggle Antenna
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Falling
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Trail
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Line
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Bubble
+        m_Overridden: 1
+--- !u!73398921 &1006823080
+VFXRenderer:
+  serializedVersion: 1
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006823074}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &1036136749
 GameObject:
   m_ObjectHideFlags: 0
@@ -12851,7 +13241,7 @@ PlayableDirector:
   - key: {fileID: 8560779142314942976, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
     value: {fileID: 1211622315}
   - key: {fileID: -1440343908901595020, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
-    value: {fileID: 1211622316}
+    value: {fileID: 238862307}
   - key: {fileID: 7331262400070586520, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
     value: {fileID: 256521895}
   - key: {fileID: -5171368792906419231, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
@@ -12876,8 +13266,6 @@ PlayableDirector:
     value: {fileID: 286854578}
   - key: {fileID: 6728642703301745784, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
     value: {fileID: 4272683498062243709}
-  - key: {fileID: -6260786946288704128, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
-    value: {fileID: 3458852115602750918}
   - key: {fileID: 1595655466553351983, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
     value: {fileID: 1408968836}
   - key: {fileID: -1975806053161558255, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
@@ -12886,14 +13274,6 @@ PlayableDirector:
     value: {fileID: 1848476762}
   - key: {fileID: -7842158599557958511, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
     value: {fileID: 1006823075}
-  - key: {fileID: -4993945140988786764, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
-    value: {fileID: 1408968835}
-  - key: {fileID: -8563126016729092256, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
-    value: {fileID: 678952679}
-  - key: {fileID: 1469368574864787662, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
-    value: {fileID: 1848476761}
-  - key: {fileID: 4738647209069117222, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
-    value: {fileID: 1006823074}
   - key: {fileID: 0}
     value: {fileID: 1049778712}
   - key: {fileID: 0}
@@ -12958,6 +13338,18 @@ PlayableDirector:
     value: {fileID: 1296219981}
   - key: {fileID: 5273871587476679015, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
     value: {fileID: 1296219974}
+  - key: {fileID: -2202879466241389053, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 1408968836}
+  - key: {fileID: -1298627862707186683, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 678952680}
+  - key: {fileID: 8560527229280487641, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 1848476762}
+  - key: {fileID: 2486261104193374912, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 1006823075}
+  - key: {fileID: 5519573546290614104, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 4272683498062243709}
+  - key: {fileID: -793614969287530793, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 256521889}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1041483980
@@ -15924,12 +16316,6 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 1211622314}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1211622316 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 30379267589028384, guid: 79b1ff48cad13284d82782d2b41baf26,
-    type: 3}
-  m_PrefabInstance: {fileID: 1211622314}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1211622317 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6259642816292246582, guid: 79b1ff48cad13284d82782d2b41baf26,
@@ -16361,9 +16747,9 @@ VisualEffect:
       - m_Value: 0.04
         m_Name: Quad Size Big
         m_Overridden: 0
-      - m_Value: 0.5
+      - m_Value: 0.142
         m_Name: Quad Size Ratio
-        m_Overridden: 0
+        m_Overridden: 1
       - m_Value: 0.1
         m_Name: Quad Scatter
         m_Overridden: 0
@@ -16388,11 +16774,23 @@ VisualEffect:
       - m_Value: 7.64
         m_Name: T_Drag
         m_Overridden: 1
+      - m_Value: 0
+        m_Name: Gravity
+        m_Overridden: 1
+      - m_Value: 0.17
+        m_Name: Range
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Plexus Range
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Plexus Point Size
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
       m_Array:
-      - m_Value: {x: 0.29099995, y: 0.8972631, z: -8.512507}
+      - m_Value: {x: 3.46, y: 0, z: 1.28}
         m_Name: Target 1
         m_Overridden: 1
       - m_Value: {x: 3.3639998, y: 1.2099996, z: -0.72999907}
@@ -16447,7 +16845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Property:
     m_Name: Target 1
-  Target: {fileID: 0}
+  Target: {fileID: 394321417}
 --- !u!114 &1296219980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17540,6 +17938,9 @@ VisualEffect:
       - m_Value: 0
         m_Name: Turbulences Ratio
         m_Overridden: 1
+      - m_Value: 100
+        m_Name: Antenna Rate
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
@@ -17638,6 +18039,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -2.192793
+      objectReference: {fileID: 0}
+    - target: {fileID: 341646215130927857, guid: 457038acb75836d4c99d0cb75066b35c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 418587087911703042, guid: 457038acb75836d4c99d0cb75066b35c,
         type: 3}
@@ -18057,7 +18463,23 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1376013873531486874, guid: 457038acb75836d4c99d0cb75066b35c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1408968841}
+    - targetCorrespondingSourceObject: {fileID: 1376013873531486874, guid: 457038acb75836d4c99d0cb75066b35c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1408968840}
+    - targetCorrespondingSourceObject: {fileID: 1376013873531486874, guid: 457038acb75836d4c99d0cb75066b35c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1408968839}
+    - targetCorrespondingSourceObject: {fileID: 1376013873531486874, guid: 457038acb75836d4c99d0cb75066b35c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1408968838}
   m_SourcePrefab: {fileID: 100100000, guid: 457038acb75836d4c99d0cb75066b35c, type: 3}
 --- !u!4 &1408968834 stripped
 Transform:
@@ -18077,6 +18499,175 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 1408968833}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1408968837 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5715317590902498089, guid: 457038acb75836d4c99d0cb75066b35c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1408968833}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408968835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8be8853279617ea196652fe43520855, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1408968838
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408968835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a8a30692aafc9a45986bcae574256b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _positionMapProperty:
+    m_Name: PositionMap
+  _bindVelocityMap: 1
+  _velocityMapProperty:
+    m_Name: VelocityMap
+  _bindNormalMap: 0
+  _normalMapProperty:
+    m_Name: NormalMap
+  _bindVertexCount: 0
+  _vertexCountProperty:
+    m_Name: VertexCount
+  Target: {fileID: 1408968837}
+--- !u!114 &1408968839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408968835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 1408968838}
+  m_VisualEffect: {fileID: 1408968841}
+--- !u!73398921 &1408968840
+VFXRenderer:
+  serializedVersion: 1
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408968835}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!2083052967 &1408968841
+VisualEffect:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408968835}
+  m_Enabled: 1
+  m_Asset: {fileID: 8926484042661614526, guid: e6b972d6f7a563a46bb7e214995e2997, type: 3}
+  m_InitialEventName: OnPlay
+  m_InitialEventNameOverriden: 0
+  m_StartSeed: 0
+  m_ResetSeedOnPlay: 1
+  m_AllowInstancing: 1
+  m_ResourceVersion: 1
+  m_PropertySheet:
+    m_Float:
+      m_Array:
+      - m_Value: 0.05
+        m_Name: Bubble Size
+        m_Overridden: 1
+      - m_Value: 117.25
+        m_Name: Bubble Rate
+        m_Overridden: 1
+      - m_Value: 42.1
+        m_Name: Trail Count
+        m_Overridden: 1
+      - m_Value: 70000
+        m_Name: Point Rate
+        m_Overridden: 1
+      - m_Value: 20
+        m_Name: Point Lifetime Max
+        m_Overridden: 1
+      - m_Value: 0.75
+        m_Name: Turbulences
+        m_Overridden: 1
+    m_Vector2f:
+      m_Array: []
+    m_Vector3f:
+      m_Array: []
+    m_Vector4f:
+      m_Array: []
+    m_Uint:
+      m_Array: []
+    m_Int:
+      m_Array: []
+    m_Matrix4x4f:
+      m_Array: []
+    m_AnimationCurve:
+      m_Array: []
+    m_Gradient:
+      m_Array: []
+    m_NamedObject:
+      m_Array:
+      - m_Value: {fileID: 0}
+        m_Name: PositionMap
+        m_Overridden: 1
+      - m_Value: {fileID: 0}
+        m_Name: VelocityMap
+        m_Overridden: 1
+    m_Bool:
+      m_Array:
+      - m_Value: 0
+        m_Name: Toggle Antenna
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Falling
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Trail
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Line
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Bubble
+        m_Overridden: 1
 --- !u!1001 &1458032799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19103,6 +19694,12 @@ VisualEffect:
         m_Overridden: 1
       - m_Value: 0
         m_Name: Turbulences Ratio
+        m_Overridden: 1
+      - m_Value: 700.8408
+        m_Name: Antenna Rate
+        m_Overridden: 1
+      - m_Value: 0.05
+        m_Name: Antenna Point Size
         m_Overridden: 1
     m_Vector2f:
       m_Array: []
@@ -20683,6 +21280,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -2.192793
       objectReference: {fileID: 0}
+    - target: {fileID: 341646215130927857, guid: 457038acb75836d4c99d0cb75066b35c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 418587087911703042, guid: 457038acb75836d4c99d0cb75066b35c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -21101,7 +21703,23 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1376013873531486874, guid: 457038acb75836d4c99d0cb75066b35c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1848476767}
+    - targetCorrespondingSourceObject: {fileID: 1376013873531486874, guid: 457038acb75836d4c99d0cb75066b35c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1848476766}
+    - targetCorrespondingSourceObject: {fileID: 1376013873531486874, guid: 457038acb75836d4c99d0cb75066b35c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1848476765}
+    - targetCorrespondingSourceObject: {fileID: 1376013873531486874, guid: 457038acb75836d4c99d0cb75066b35c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1848476764}
   m_SourcePrefab: {fileID: 100100000, guid: 457038acb75836d4c99d0cb75066b35c, type: 3}
 --- !u!4 &1848476760 stripped
 Transform:
@@ -21121,6 +21739,175 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 1848476759}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1848476763 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5715317590902498089, guid: 457038acb75836d4c99d0cb75066b35c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1848476759}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848476761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8be8853279617ea196652fe43520855, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1848476764
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848476761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a8a30692aafc9a45986bcae574256b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _positionMapProperty:
+    m_Name: PositionMap
+  _bindVelocityMap: 1
+  _velocityMapProperty:
+    m_Name: VelocityMap
+  _bindNormalMap: 0
+  _normalMapProperty:
+    m_Name: NormalMap
+  _bindVertexCount: 0
+  _vertexCountProperty:
+    m_Name: VertexCount
+  Target: {fileID: 1848476763}
+--- !u!114 &1848476765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848476761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 1848476764}
+  m_VisualEffect: {fileID: 1848476766}
+--- !u!2083052967 &1848476766
+VisualEffect:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848476761}
+  m_Enabled: 1
+  m_Asset: {fileID: 8926484042661614526, guid: e6b972d6f7a563a46bb7e214995e2997, type: 3}
+  m_InitialEventName: OnPlay
+  m_InitialEventNameOverriden: 0
+  m_StartSeed: 0
+  m_ResetSeedOnPlay: 1
+  m_AllowInstancing: 1
+  m_ResourceVersion: 1
+  m_PropertySheet:
+    m_Float:
+      m_Array:
+      - m_Value: 0.05
+        m_Name: Bubble Size
+        m_Overridden: 1
+      - m_Value: 117.25
+        m_Name: Bubble Rate
+        m_Overridden: 1
+      - m_Value: 42.1
+        m_Name: Trail Count
+        m_Overridden: 1
+      - m_Value: 3.1950223
+        m_Name: Point Rate
+        m_Overridden: 1
+      - m_Value: 20
+        m_Name: Point Lifetime Max
+        m_Overridden: 1
+      - m_Value: 0.75
+        m_Name: Turbulences
+        m_Overridden: 1
+    m_Vector2f:
+      m_Array: []
+    m_Vector3f:
+      m_Array: []
+    m_Vector4f:
+      m_Array: []
+    m_Uint:
+      m_Array: []
+    m_Int:
+      m_Array: []
+    m_Matrix4x4f:
+      m_Array: []
+    m_AnimationCurve:
+      m_Array: []
+    m_Gradient:
+      m_Array: []
+    m_NamedObject:
+      m_Array:
+      - m_Value: {fileID: 0}
+        m_Name: PositionMap
+        m_Overridden: 1
+      - m_Value: {fileID: 0}
+        m_Name: VelocityMap
+        m_Overridden: 1
+    m_Bool:
+      m_Array:
+      - m_Value: 0
+        m_Name: Toggle Antenna
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Falling
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Trail
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Line
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Bubble
+        m_Overridden: 1
+--- !u!73398921 &1848476767
+VFXRenderer:
+  serializedVersion: 1
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848476761}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!114 &1893194061 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1833667072968709915, guid: 4484f8c6c4cdf954fb98daf0084c5619,
@@ -21986,13 +22773,18 @@ GameObject:
   m_Component:
   - component: {fileID: 4272683498062243708}
   - component: {fileID: 4272683498062243709}
+  - component: {fileID: 4272683498062243714}
+  - component: {fileID: 4272683498062243713}
+  - component: {fileID: 4272683498062243712}
+  - component: {fileID: 4272683498062243711}
+  - component: {fileID: 4272683498062243710}
   m_Layer: 0
   m_Name: T_WallPush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4087609863596838150
 Transform:
   m_ObjectHideFlags: 0
@@ -22018,7 +22810,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.00000005838363, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4272683498062243708}
@@ -22061,6 +22853,197 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4272683498062243710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3458852115602750918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8be8853279617ea196652fe43520855, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sources:
+  - {fileID: 6836164163408037561}
+  _pointCount: 65536
+  _compute: {fileID: 7200000, guid: feda2e5c3aa86f2d4865487ae1f2e229, type: 3}
+--- !u!114 &4272683498062243711
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3458852115602750918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a8a30692aafc9a45986bcae574256b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _positionMapProperty:
+    m_Name: PositionMap
+  _bindVelocityMap: 1
+  _velocityMapProperty:
+    m_Name: VelocityMap
+  _bindNormalMap: 0
+  _normalMapProperty:
+    m_Name: NormalMap
+  _bindVertexCount: 0
+  _vertexCountProperty:
+    m_Name: VertexCount
+  Target: {fileID: 4272683498062243710}
+--- !u!114 &4272683498062243712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3458852115602750918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ExecuteInEditor: 1
+  m_Bindings:
+  - {fileID: 4272683498062243711}
+  m_VisualEffect: {fileID: 4272683498062243713}
+--- !u!2083052967 &4272683498062243713
+VisualEffect:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3458852115602750918}
+  m_Enabled: 1
+  m_Asset: {fileID: 8926484042661614526, guid: e6b972d6f7a563a46bb7e214995e2997, type: 3}
+  m_InitialEventName: OnPlay
+  m_InitialEventNameOverriden: 0
+  m_StartSeed: 0
+  m_ResetSeedOnPlay: 1
+  m_AllowInstancing: 1
+  m_ResourceVersion: 1
+  m_PropertySheet:
+    m_Float:
+      m_Array:
+      - m_Value: 0
+        m_Name: Point Rate
+        m_Overridden: 1
+      - m_Value: 0.01
+        m_Name: Pont Lifetime Min
+        m_Overridden: 1
+      - m_Value: 10
+        m_Name: Point Lifetime Max
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Noise
+        m_Overridden: 1
+      - m_Value: 0.76
+        m_Name: Turbulences
+        m_Overridden: 1
+      - m_Value: 21.27
+        m_Name: Turbulences Speed
+        m_Overridden: 1
+      - m_Value: 3.0865998
+        m_Name: Turbulences Ratio
+        m_Overridden: 1
+      - m_Value: 0.1
+        m_Name: Turbulences Frequency
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Line Rate
+        m_Overridden: 1
+      - m_Value: 0.95
+        m_Name: Line Range
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Line Point Size
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Antenna Rate
+        m_Overridden: 1
+    m_Vector2f:
+      m_Array: []
+    m_Vector3f:
+      m_Array:
+      - m_Value: {x: -0.4, y: 0, z: -0.08}
+        m_Name: Gravity Point
+        m_Overridden: 1
+    m_Vector4f:
+      m_Array:
+      - m_Value: {x: 0.735849, y: 0.625305, z: 0.23255605, w: 1}
+        m_Name: Line Color
+        m_Overridden: 1
+    m_Uint:
+      m_Array: []
+    m_Int:
+      m_Array: []
+    m_Matrix4x4f:
+      m_Array: []
+    m_AnimationCurve:
+      m_Array: []
+    m_Gradient:
+      m_Array: []
+    m_NamedObject:
+      m_Array:
+      - m_Value: {fileID: 0}
+        m_Name: PositionMap
+        m_Overridden: 1
+      - m_Value: {fileID: 0}
+        m_Name: VelocityMap
+        m_Overridden: 1
+    m_Bool:
+      m_Array:
+      - m_Value: 0
+        m_Name: Toggle Falling
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Trail
+        m_Overridden: 1
+      - m_Value: 0
+        m_Name: Toggle Bubble
+        m_Overridden: 1
+--- !u!73398921 &4272683498062243714
+VFXRenderer:
+  serializedVersion: 1
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3458852115602750918}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!4 &4272856179088333544
 Transform:
   m_ObjectHideFlags: 0
@@ -22846,7 +23829,7 @@ SkinnedMeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2326059842842560907}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
