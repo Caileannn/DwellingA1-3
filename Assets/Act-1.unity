@@ -1579,8 +1579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 238862309}
+  m_Bindings: []
   m_VisualEffect: {fileID: 238862312}
 --- !u!73398921 &238862311
 VFXRenderer:
@@ -1590,7 +1589,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238862307}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -5985,6 +5984,7 @@ GameObject:
   - component: {fileID: 368485478}
   - component: {fileID: 368485477}
   - component: {fileID: 368485476}
+  - component: {fileID: 368485479}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -6049,7 +6049,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  - {fileID: 2100000, guid: 0d786b1cd5fc95d44b10af89868772df, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6079,6 +6079,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 368485474}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &368485479
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368485474}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 25c5375281f0b0b4486e06d298245118, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &391232099
 GameObject:
   m_ObjectHideFlags: 0
@@ -7304,12 +7325,6 @@ MonoBehaviour:
 --- !u!4 &498859339 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5267566460009650785, guid: 4484f8c6c4cdf954fb98daf0084c5619,
-    type: 3}
-  m_PrefabInstance: {fileID: 498859337}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &498859340 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5560259660661791407, guid: 4484f8c6c4cdf954fb98daf0084c5619,
     type: 3}
   m_PrefabInstance: {fileID: 498859337}
   m_PrefabAsset: {fileID: 0}
@@ -12028,8 +12043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 989421919}
+  m_Bindings: []
   m_VisualEffect: {fileID: 989421922}
 --- !u!73398921 &989421921
 VFXRenderer:
@@ -12039,7 +12053,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 989421917}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -13321,7 +13335,7 @@ PlayableDirector:
   - key: {fileID: -2325495540592935464, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
     value: {fileID: 989421923}
   - key: {fileID: -4605082190737646937, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
-    value: {fileID: 498859340}
+    value: {fileID: 989421917}
   - key: {fileID: 8966524357871516421, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
     value: {fileID: 757888081}
   - key: {fileID: 5039170376216233855, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
@@ -13350,6 +13364,8 @@ PlayableDirector:
     value: {fileID: 4272683498062243709}
   - key: {fileID: -793614969287530793, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
     value: {fileID: 256521889}
+  - key: {fileID: 6629795049327489851, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 368485479}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1041483980
