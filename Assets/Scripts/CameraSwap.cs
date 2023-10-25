@@ -13,6 +13,7 @@ public class CamerSwap : MonoBehaviour
     private float count;
     private bool b_R = false;
     private bool b_L = false;
+    private bool m_Bool = false;
 
     void Start()
     {
@@ -91,21 +92,74 @@ public class CamerSwap : MonoBehaviour
 
     void Update()
     {
-        // Debug.Log(m_Slider);
+        var num_of_cameras = cameras.Count;
+        
         var tc = 0;
-        foreach (var item in cameras)
+       
+        // Check if the input is a numeric key (0-9)
+        if (Input.inputString.Length > 0 && char.IsDigit(Input.inputString[0]))
         {
+            // Parse the input as an integer
+            int inputNumber = int.Parse(Input.inputString[0].ToString());
 
-            if (tc == count)
+            // Check if the input number is within the range 0-9
+            if (inputNumber >= 0 && inputNumber <= 9)
             {
-                item.enabled = true;
+                tc = inputNumber;
+                if (m_Bool)
+                {
+                    tc += 10;
+                }
+
+                // Iterate through the cameras array
+                for (int i = 0; i < cameras.Count; i++)
+                {
+                    if (i == tc)
+                    {
+                        cameras[i].enabled = true;
+                    }
+                    else
+                    {
+                        cameras[i].enabled = false;
+                    }
+                }
+            }
+        }
+
+        if(Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            if(m_Bool)
+            {
+                m_Bool = false;
             }
             else
             {
-                item.enabled = false;
+                m_Bool = true;
             }
-            tc++;
+
+            Debug.Log(m_Bool);
         }
+
+
+
+
+
+
+        // Debug.Log(m_Slider);
+
+        //foreach (var item in cameras)
+        //{
+
+        //    if (tc == count
+        //    {
+        //        item.enabled = true;
+        //    }
+        //    else
+        //    {
+        //        item.enabled = false;
+        //    }
+        //    tc++;
+        //}
 
     }
 }

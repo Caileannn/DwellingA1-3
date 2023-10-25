@@ -1,7 +1,7 @@
 using UnityEngine;
 
 
-    [ExecuteInEditMode]
+  
     public class CameraFollow : MonoBehaviour
     {
         [Tooltip("The target to follow")] public Transform target;
@@ -10,6 +10,7 @@ using UnityEngine;
         public float smoothingTime; //The time it takes to move to the new position
 
         private Vector3 m_Offset;
+        public float m_Div = 10f;
         private Vector3 m_CamVelocity; //Camera's velocity (used by SmoothDamp)
 
         // Use this for initialization
@@ -20,8 +21,10 @@ using UnityEngine;
 
         void FixedUpdate()
         {
-            var newPosition = new Vector3(target.position.x + m_Offset.x, transform.position.y,
-                target.position.z + m_Offset.z);
+            var newPosition = new Vector3(transform.position.x, target.position.y + m_Offset.y,
+                transform.position.z);
+
+        
 
             gameObject.transform.position =
                 Vector3.SmoothDamp(transform.position, newPosition, ref m_CamVelocity, smoothingTime, Mathf.Infinity,
