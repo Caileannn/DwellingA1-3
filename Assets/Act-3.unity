@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 5704.0503, g: 5476.488, b: 5554.2925, a: 1}
+  m_IndirectSpecularColor: {r: 5700.787, g: 5473.006, b: 5549.967, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -516,6 +516,37 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &245182389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 245182390}
+  m_Layer: 0
+  m_Name: test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &245182390
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245182389}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -19.88, y: 7.11, z: 14.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1342,15 +1373,15 @@ GameObject:
   - component: {fileID: 402486036}
   - component: {fileID: 402486035}
   - component: {fileID: 402486034}
-  - component: {fileID: 402486037}
   - component: {fileID: 402486039}
+  - component: {fileID: 402486040}
   m_Layer: 0
   m_Name: Blue Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &402486029
 Transform:
   m_ObjectHideFlags: 0
@@ -1394,7 +1425,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 402486030}
+  - {fileID: 402486036}
+  - {fileID: 402486035}
+  - {fileID: 402486034}
+  - {fileID: 402486040}
   m_VisualEffect: {fileID: 402486033}
 --- !u!73398921 &402486032
 VFXRenderer:
@@ -1404,7 +1440,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402486028}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1526,7 +1562,7 @@ VisualEffect:
       - m_Value: 1.97
         m_Name: Spiral Scale
         m_Overridden: 1
-      - m_Value: 1
+      - m_Value: 52.7
         m_Name: Spiral Strength
         m_Overridden: 1
       - m_Value: 1.61
@@ -1551,37 +1587,37 @@ VisualEffect:
       - m_Value: {x: 0.0000076293945, y: 7.0167104e-15, z: 7.0167096e-15}
         m_Name: Avatar_Position_angles
         m_Overridden: 1
-      - m_Value: {x: 55.62283, y: 290.2998, z: 255.21774}
+      - m_Value: {x: 27.646736, y: 17.817642, z: 264.14197}
         m_Name: Avatar_RHand_angles
         m_Overridden: 1
-      - m_Value: {x: -56.902855, y: 4.1753554, z: 37.552696}
+      - m_Value: {x: -57.720917, y: 4.3115315, z: 37.6103}
         m_Name: Avatar_RHand_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
         m_Name: Avatar_RHand_scale
         m_Overridden: 1
-      - m_Value: {x: 299.91574, y: 157.30516, z: 91.09075}
+      - m_Value: {x: 356.41318, y: 149.28885, z: 27.992435}
         m_Name: Avatar_LHand_angles
         m_Overridden: 1
-      - m_Value: {x: -57.44584, y: 4.2231703, z: 38.091637}
+      - m_Value: {x: -57.866737, y: 4.3420334, z: 38.18094}
         m_Name: Avatar_LHand_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
         m_Name: Avatar_LHand_scale
         m_Overridden: 1
-      - m_Value: {x: 1.0897862, y: 335.87964, z: 7.5930223}
+      - m_Value: {x: 357.43933, y: 50.836864, z: 17.264318}
         m_Name: Avatar_LFoot_angles
         m_Overridden: 1
-      - m_Value: {x: -57.84801, y: 3.5868552, z: 37.756207}
+      - m_Value: {x: -57.812286, y: 3.5720773, z: 38.087234}
         m_Name: Avatar_LFoot_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
         m_Name: Avatar_LFoot_scale
         m_Overridden: 1
-      - m_Value: {x: 358.73465, y: 28.931719, z: 2.321984}
+      - m_Value: {x: 359.62073, y: 34.344894, z: 1.3684883}
         m_Name: Avatar_RFoot_angles
         m_Overridden: 1
-      - m_Value: {x: -57.01724, y: 3.6208665, z: 37.718086}
+      - m_Value: {x: -57.593613, y: 3.5687208, z: 37.932747}
         m_Name: Avatar_RFoot_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
@@ -1590,7 +1626,7 @@ VisualEffect:
       - m_Value: {x: -55.18705, y: 3.54, z: 40.65}
         m_Name: Center
         m_Overridden: 1
-      - m_Value: {x: -57.32705, y: 4.04, z: 37.47}
+      - m_Value: {x: -56.63705, y: 7.49, z: 43.24}
         m_Name: EffectorPosition
         m_Overridden: 1
       - m_Value: {x: 0, y: 0, z: 0}
@@ -1607,6 +1643,15 @@ VisualEffect:
         m_Overridden: 1
       - m_Value: {x: 0, y: 1, z: 0}
         m_Name: Wave Offset
+        m_Overridden: 1
+      - m_Value: {x: -0, y: 0, z: 0}
+        m_Name: Center1_angles
+        m_Overridden: 1
+      - m_Value: {x: -19.88, y: 7.11, z: 14.39}
+        m_Name: Center1_position
+        m_Overridden: 1
+      - m_Value: {x: 1, y: 1, z: 1}
+        m_Name: Center1_scale
         m_Overridden: 1
     m_Vector4f:
       m_Array: []
@@ -1686,21 +1731,6 @@ MonoBehaviour:
   m_Property:
     m_Name: Avatar_LFoot
   Target: {fileID: 7358530051144475028}
---- !u!114 &402486037
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 402486028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07c3070554d0a8944a95ff8f018c2c9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Property:
-    m_Name: Center
-  Target: {fileID: 543450651809672638}
 --- !u!114 &402486038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1736,6 +1766,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &402486040
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402486028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Property:
+    m_Name: Center1
+  Target: {fileID: 245182390}
 --- !u!1 &412835158
 GameObject:
   m_ObjectHideFlags: 0
@@ -4216,7 +4261,6 @@ Transform:
   m_Children:
   - {fileID: 685518817}
   - {fileID: 402486029}
-  - {fileID: 1110828763}
   m_Father: {fileID: 164826442}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1089755999
@@ -4251,414 +4295,6 @@ Transform:
   - {fileID: 688360430}
   m_Father: {fileID: 172566189}
   m_LocalEulerAnglesHint: {x: -10.899869, y: -10.433114, z: -2.4801114}
---- !u!1 &1110828762
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1110828763}
-  - component: {fileID: 1110828772}
-  - component: {fileID: 1110828771}
-  - component: {fileID: 1110828770}
-  - component: {fileID: 1110828769}
-  - component: {fileID: 1110828768}
-  - component: {fileID: 1110828767}
-  - component: {fileID: 1110828766}
-  - component: {fileID: 1110828765}
-  - component: {fileID: 1110828764}
-  m_Layer: 0
-  m_Name: Blue Trees (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1110828763
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110828762}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.41657013, y: -0.5597547, z: -0.5790921, w: 0.42165905}
-  m_LocalPosition: {x: -31.178953, y: -9.702061, z: 37.971478}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1075167803}
-  m_LocalEulerAnglesHint: {x: -91.62, y: 201.61, z: -308.90198}
---- !u!95 &1110828764
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110828762}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 43f4d429315bf684591f7607e2d77384, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1110828765
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110828762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Property:
-    m_Name: Avatar_RFoot
-  Target: {fileID: 8972683569266531370}
---- !u!114 &1110828766
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110828762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Property:
-    m_Name: Avatar_RHand
-  Target: {fileID: 8370944965629776454}
---- !u!114 &1110828767
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110828762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Property:
-    m_Name: Avatar_LFoot
-  Target: {fileID: 7358530051144475028}
---- !u!114 &1110828768
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110828762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fdfea1f838247c40921a07afedde962, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Property:
-    m_Name: Avatar_LHand
-  Target: {fileID: 298523315428330631}
---- !u!114 &1110828769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110828762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdafc37f32b176349b1684c4455b98e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 1110828768}
-  - {fileID: 1110828767}
-  - {fileID: 1110828766}
-  - {fileID: 1110828765}
-  m_VisualEffect: {fileID: 1110828772}
---- !u!73398921 &1110828770
-VFXRenderer:
-  serializedVersion: 1
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110828762}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 0
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 257
-  m_RendererPriority: 0
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!114 &1110828771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110828762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e72b1b9d3cfbb2e4497975854e4a77df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1167211663}
-  id: Effector
---- !u!2083052967 &1110828772
-VisualEffect:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1110828762}
-  m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: fc3843e46d5acb8469034a5110173279, type: 3}
-  m_InitialEventName: OnPlay
-  m_InitialEventNameOverriden: 0
-  m_StartSeed: 0
-  m_ResetSeedOnPlay: 1
-  m_AllowInstancing: 1
-  m_ResourceVersion: 1
-  m_PropertySheet:
-    m_Float:
-      m_Array:
-      - m_Value: 0.2
-        m_Name: Radius
-        m_Overridden: 1
-      - m_Value: 5
-        m_Name: Bounce
-        m_Overridden: 1
-      - m_Value: 1
-        m_Name: Friction
-        m_Overridden: 1
-      - m_Value: 0.226
-        m_Name: Lifetime Loss
-        m_Overridden: 1
-      - m_Value: 0
-        m_Name: Roughness
-        m_Overridden: 1
-      - m_Value: 0.04
-        m_Name: Point Size
-        m_Overridden: 1
-      - m_Value: 1
-        m_Name: Min Life
-        m_Overridden: 1
-      - m_Value: 20
-        m_Name: Max Life
-        m_Overridden: 1
-      - m_Value: 0
-        m_Name: Sine Speed
-        m_Overridden: 1
-      - m_Value: 0
-        m_Name: Sine Wave Freq
-        m_Overridden: 1
-      - m_Value: 0
-        m_Name: Sine Wave Min
-        m_Overridden: 1
-      - m_Value: 0
-        m_Name: Sine Wave Max
-        m_Overridden: 1
-      - m_Value: 0.05
-        m_Name: Turbulence Intensity
-        m_Overridden: 1
-      - m_Value: 3.94
-        m_Name: Turbulence Drag
-        m_Overridden: 1
-      - m_Value: 0.1
-        m_Name: Turbulence Frequency
-        m_Overridden: 1
-      - m_Value: 5000000
-        m_Name: Point Count
-        m_Overridden: 1
-      - m_Value: 3.93
-        m_Name: Force
-        m_Overridden: 1
-      - m_Value: 0
-        m_Name: Wave
-        m_Overridden: 1
-      - m_Value: 0
-        m_Name: Spiral
-        m_Overridden: 1
-      - m_Value: 1
-        m_Name: Color Bias
-        m_Overridden: 1
-      - m_Value: 6.57
-        m_Name: Effector Radius
-        m_Overridden: 1
-      - m_Value: 23.33
-        m_Name: Effector Strength
-        m_Overridden: 1
-      - m_Value: 0
-        m_Name: Spiral Falloff
-        m_Overridden: 1
-      - m_Value: 8.36
-        m_Name: Spiral Scale
-        m_Overridden: 1
-      - m_Value: 18.15
-        m_Name: Spiral Strength
-        m_Overridden: 1
-      - m_Value: 1.61
-        m_Name: Wave Scale
-        m_Overridden: 1
-      - m_Value: 3.74
-        m_Name: Wave Speed
-        m_Overridden: 1
-      - m_Value: 20.75
-        m_Name: Wave Strength
-        m_Overridden: 1
-    m_Vector2f:
-      m_Array: []
-    m_Vector3f:
-      m_Array:
-      - m_Value: {x: -57.14382, y: 4.4493146, z: 40.677822}
-        m_Name: Avatar_Position_position
-        m_Overridden: 1
-      - m_Value: {x: 1, y: 1, z: 1}
-        m_Name: Avatar_Position_scale
-        m_Overridden: 1
-      - m_Value: {x: 0.0000076293945, y: 7.0167104e-15, z: 7.0167096e-15}
-        m_Name: Avatar_Position_angles
-        m_Overridden: 1
-      - m_Value: {x: 55.62283, y: 290.2998, z: 255.21774}
-        m_Name: Avatar_RHand_angles
-        m_Overridden: 1
-      - m_Value: {x: -56.902855, y: 4.1753554, z: 37.552696}
-        m_Name: Avatar_RHand_position
-        m_Overridden: 1
-      - m_Value: {x: 1, y: 1, z: 1}
-        m_Name: Avatar_RHand_scale
-        m_Overridden: 1
-      - m_Value: {x: 299.91574, y: 157.30516, z: 91.09075}
-        m_Name: Avatar_LHand_angles
-        m_Overridden: 1
-      - m_Value: {x: -57.44584, y: 4.2231703, z: 38.091637}
-        m_Name: Avatar_LHand_position
-        m_Overridden: 1
-      - m_Value: {x: 1, y: 1, z: 1}
-        m_Name: Avatar_LHand_scale
-        m_Overridden: 1
-      - m_Value: {x: 1.0897862, y: 335.87964, z: 7.5930223}
-        m_Name: Avatar_LFoot_angles
-        m_Overridden: 1
-      - m_Value: {x: -57.84801, y: 3.5868552, z: 37.756207}
-        m_Name: Avatar_LFoot_position
-        m_Overridden: 1
-      - m_Value: {x: 1, y: 1, z: 1}
-        m_Name: Avatar_LFoot_scale
-        m_Overridden: 1
-      - m_Value: {x: 358.73465, y: 28.931719, z: 2.321984}
-        m_Name: Avatar_RFoot_angles
-        m_Overridden: 1
-      - m_Value: {x: -57.01724, y: 3.6208665, z: 37.718086}
-        m_Name: Avatar_RFoot_position
-        m_Overridden: 1
-      - m_Value: {x: 1, y: 1, z: 1}
-        m_Name: Avatar_RFoot_scale
-        m_Overridden: 1
-      - m_Value: {x: -57.467506, y: 4.130503, z: 37.650005}
-        m_Name: Center
-        m_Overridden: 1
-      - m_Value: {x: -57.32705, y: 4.04, z: 37.47}
-        m_Name: EffectorPosition
-        m_Overridden: 1
-      - m_Value: {x: 0, y: 0, z: 0}
-        m_Name: EffectorVelocity
-        m_Overridden: 1
-      - m_Value: {x: 0, y: 0, z: 0}
-        m_Name: HandL_angles
-        m_Overridden: 1
-      - m_Value: {x: 0, y: 0, z: 0}
-        m_Name: HandL_position
-        m_Overridden: 1
-      - m_Value: {x: 1, y: 1, z: 1}
-        m_Name: HandL_scale
-        m_Overridden: 1
-      - m_Value: {x: 0, y: 1, z: 0}
-        m_Name: Wave Offset
-        m_Overridden: 1
-      - m_Value: {x: -0, y: 0, z: 0}
-        m_Name: Center1_angles
-        m_Overridden: 1
-      - m_Value: {x: -41.48705, y: 4.5699997, z: 47.25}
-        m_Name: Center1_position
-        m_Overridden: 1
-      - m_Value: {x: 1, y: 1, z: 1}
-        m_Name: Center1_scale
-        m_Overridden: 1
-    m_Vector4f:
-      m_Array: []
-    m_Uint:
-      m_Array: []
-    m_Int:
-      m_Array: []
-    m_Matrix4x4f:
-      m_Array: []
-    m_AnimationCurve:
-      m_Array: []
-    m_Gradient:
-      m_Array: []
-    m_NamedObject:
-      m_Array:
-      - m_Value: {fileID: 6918954641851045129, guid: ca1aa21c6151b4c45823d49435a377b9,
-          type: 3}
-        m_Name: PositionMap
-        m_Overridden: 1
-      - m_Value: {fileID: -2231058418007342408, guid: ca1aa21c6151b4c45823d49435a377b9,
-          type: 3}
-        m_Name: ColorMap
-        m_Overridden: 1
-      - m_Value: {fileID: 2800000, guid: 276d9e395ae18fe40a9b4988549f2349, type: 3}
-        m_Name: AMap
-        m_Overridden: 1
-      - m_Value: {fileID: 2800000, guid: 276d9e395ae18fe40a9b4988549f2349, type: 3}
-        m_Name: AVelocity
-        m_Overridden: 1
-    m_Bool:
-      m_Array:
-      - m_Value: 0
-        m_Name: Sine Wave Toggle
-        m_Overridden: 1
 --- !u!1 &1167211662
 GameObject:
   m_ObjectHideFlags: 0
@@ -4684,7 +4320,7 @@ Transform:
   m_GameObject: {fileID: 1167211662}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.14, y: 0.5, z: -3.18}
+  m_LocalPosition: {x: -1.45, y: 3.95, z: 2.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10011,3 +9647,4 @@ SceneRoots:
   - {fileID: 543450651809672638}
   - {fileID: 322746122}
   - {fileID: 236381599}
+  - {fileID: 245182390}
