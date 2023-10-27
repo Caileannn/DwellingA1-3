@@ -33,10 +33,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature.001|wave_003_chr02_remap
+      name: Wave_03
       takeName: Armature.001|wave_003_chr02_remap
       internalID: 7367129674682746216
-      firstFrame: 0
+      firstFrame: 15
       lastFrame: 24826
       wrapMode: 0
       orientationOffsetY: 0
