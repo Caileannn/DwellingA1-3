@@ -297,10 +297,10 @@ MonoBehaviour:
     collapsed: 0
   uiBounds:
     serializedVersion: 2
-    x: -4240
-    y: 523
-    width: 13732
-    height: 6672
+    x: -4241
+    y: 522
+    width: 13733
+    height: 6674
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19615,7 +19615,9 @@ MonoBehaviour:
   m_Tooltip: 
   m_Nodes:
   - m_Id: 0
-    linkedSlots: []
+    linkedSlots:
+    - outputSlot: {fileID: 8926484042661615765}
+      inputSlot: {fileID: 8926484042661616522}
     position: {x: 1286, y: 2889}
     expandedSlots: []
     expanded: 0
@@ -19661,6 +19663,7 @@ MonoBehaviour:
   m_Direction: 1
   m_LinkedSlots:
   - {fileID: 8926484042661615288}
+  - {fileID: 8926484042661616522}
 --- !u!114 &8926484042661615766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31535,7 +31538,7 @@ MonoBehaviour:
   indirectDraw: 0
   computeCulling: 0
   frustumCulling: 0
-  castShadows: 0
+  castShadows: 1
   useExposureWeight: 0
   needsOwnSort: 0
   shaderGraph: {fileID: 0}
@@ -38167,7 +38170,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0
+      m_SerializableObject: 0.232
     m_Space: 2147483647
   m_Property:
     name: metallic
@@ -38175,7 +38178,8 @@ MonoBehaviour:
       m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
-  m_LinkedSlots: []
+  m_LinkedSlots:
+  - {fileID: 8926484042661615765}
 --- !u!114 &8926484042661616543
 MonoBehaviour:
   m_ObjectHideFlags: 0

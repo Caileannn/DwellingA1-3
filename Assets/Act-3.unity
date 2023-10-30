@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 3803.4253, g: 3656.6792, b: 3818.6362, a: 1}
+  m_IndirectSpecularColor: {r: 2404.9392, g: 2264.6619, b: 2254.5525, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -151,13 +151,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6171362}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.23004185, y: -0.54243314, z: 0.74368364, w: -0.31588247}
+  m_LocalRotation: {x: 0.08827671, y: -0.3740449, z: 0.87656426, w: -0.28971156}
   m_LocalPosition: {x: -56.1, y: -0.1, z: -62.799995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 978431866}
-  m_LocalEulerAnglesHint: {x: 467.8, y: 180.1, z: -673.9}
+  m_LocalEulerAnglesHint: {x: 502.8, y: 207.8, z: -673.9}
 --- !u!114 &6171364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3501,37 +3501,37 @@ VisualEffect:
       - m_Value: {x: 0.0000076293945, y: 7.0167104e-15, z: 7.0167096e-15}
         m_Name: Avatar_Position_angles
         m_Overridden: 1
-      - m_Value: {x: 37.245346, y: 35.937565, z: 264.8775}
+      - m_Value: {x: 16.084604, y: 261.0162, z: 284.11505}
         m_Name: Avatar_RHand_angles
         m_Overridden: 1
-      - m_Value: {x: -57.566082, y: 4.1993847, z: 40.706722}
+      - m_Value: {x: -57.762093, y: 4.3522215, z: 40.719177}
         m_Name: Avatar_RHand_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
         m_Name: Avatar_RHand_scale
         m_Overridden: 1
-      - m_Value: {x: 42.001045, y: 125.60066, z: 75.93202}
+      - m_Value: {x: 349.5377, y: 342.05225, z: 94.82465}
         m_Name: Avatar_LHand_angles
         m_Overridden: 1
-      - m_Value: {x: -57.49905, y: 4.318136, z: 41.56711}
+      - m_Value: {x: -58.00811, y: 4.2427206, z: 40.25679}
         m_Name: Avatar_LHand_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
         m_Name: Avatar_LHand_scale
         m_Overridden: 1
-      - m_Value: {x: 15.913818, y: 43.50862, z: 359.1792}
+      - m_Value: {x: 5.635701, y: 287.30737, z: 25.863815}
         m_Name: Avatar_LFoot_angles
         m_Overridden: 1
-      - m_Value: {x: -57.303482, y: 3.526646, z: 41.59455}
+      - m_Value: {x: -57.98711, y: 3.5375607, z: 40.48997}
         m_Name: Avatar_LFoot_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
         m_Name: Avatar_LFoot_scale
         m_Overridden: 1
-      - m_Value: {x: 1.675806, y: 104.97612, z: 3.1089113}
+      - m_Value: {x: 21.557718, y: 303.95813, z: 329.55115}
         m_Name: Avatar_RFoot_angles
         m_Overridden: 1
-      - m_Value: {x: -57.43921, y: 3.593917, z: 41.04072}
+      - m_Value: {x: -57.924347, y: 3.6030183, z: 40.453106}
         m_Name: Avatar_RFoot_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
@@ -3540,10 +3540,10 @@ VisualEffect:
       - m_Value: {x: -55.18705, y: 3.54, z: 40.65}
         m_Name: Center
         m_Overridden: 1
-      - m_Value: {x: -57.490726, y: 4.033208, z: 40.888}
+      - m_Value: {x: -57.913498, y: 4.1872377, z: 40.82333}
         m_Name: EffectorPosition
         m_Overridden: 1
-      - m_Value: {x: 0.06993103, y: -0.07836723, z: -0.024887085}
+      - m_Value: {x: 0, y: 0, z: 0}
         m_Name: EffectorVelocity
         m_Overridden: 1
       - m_Value: {x: 0, y: 0, z: 0}
@@ -3558,10 +3558,10 @@ VisualEffect:
       - m_Value: {x: 0, y: 0, z: 0}
         m_Name: Wave Offset
         m_Overridden: 1
-      - m_Value: {x: 15.345837, y: 97.141045, z: 357.63086}
+      - m_Value: {x: 351.88434, y: 302.25668, z: 6.1590295}
         m_Name: Center1_angles
         m_Overridden: 1
-      - m_Value: {x: -57.49552, y: 4.289685, z: 41.17882}
+      - m_Value: {x: -57.93128, y: 4.4285364, z: 40.46397}
         m_Name: Center1_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
@@ -7328,37 +7328,37 @@ VisualEffect:
       - m_Value: {x: 0.0000076293945, y: 7.0167104e-15, z: 7.0167096e-15}
         m_Name: Avatar_Position_angles
         m_Overridden: 1
-      - m_Value: {x: 358.74667, y: 248.85458, z: 290.49948}
+      - m_Value: {x: 345.959, y: 206.64943, z: 353.63593}
         m_Name: Avatar_RHand_angles
         m_Overridden: 1
-      - m_Value: {x: -56.87988, y: 4.261876, z: 37.489704}
+      - m_Value: {x: -57.370495, y: 4.6190796, z: 37.541515}
         m_Name: Avatar_RHand_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
         m_Name: Avatar_RHand_scale
         m_Overridden: 1
-      - m_Value: {x: 331.12708, y: 269.904, z: 318.3966}
+      - m_Value: {x: 20.82098, y: 306.63773, z: 272.46823}
         m_Name: Avatar_LHand_angles
         m_Overridden: 1
-      - m_Value: {x: -56.408016, y: 4.4943604, z: 36.77228}
+      - m_Value: {x: -56.728302, y: 4.9688544, z: 36.63131}
         m_Name: Avatar_LHand_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
         m_Name: Avatar_LHand_scale
         m_Overridden: 1
-      - m_Value: {x: 359.19208, y: 201.9214, z: 354.8061}
+      - m_Value: {x: 355.96918, y: 203.51875, z: 347.73138}
         m_Name: Avatar_LFoot_angles
         m_Overridden: 1
-      - m_Value: {x: -56.566246, y: 3.589739, z: 36.88922}
+      - m_Value: {x: -56.503334, y: 3.6260238, z: 36.836708}
         m_Name: Avatar_LFoot_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
         m_Name: Avatar_LFoot_scale
         m_Overridden: 1
-      - m_Value: {x: 0.49173686, y: 233.23578, z: 3.2175236}
+      - m_Value: {x: 1.574304, y: 234.66115, z: 18.90485}
         m_Name: Avatar_RFoot_angles
         m_Overridden: 1
-      - m_Value: {x: -57.172432, y: 3.5856774, z: 37.336372}
+      - m_Value: {x: -57.168976, y: 3.604664, z: 37.372902}
         m_Name: Avatar_RFoot_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
@@ -9571,37 +9571,37 @@ VisualEffect:
       - m_Value: {x: 0.0000076293945, y: 7.0167104e-15, z: 7.0167096e-15}
         m_Name: Avatar_Position_angles
         m_Overridden: 1
-      - m_Value: {x: 336.31552, y: 37.07252, z: 7.2186956}
+      - m_Value: {x: 352.0854, y: 359.7758, z: 43.89769}
         m_Name: Avatar_RHand_angles
         m_Overridden: 1
-      - m_Value: {x: -56.305714, y: 4.9103656, z: 37.642998}
+      - m_Value: {x: -56.26887, y: 5.1500564, z: 37.32814}
         m_Name: Avatar_RHand_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
         m_Name: Avatar_RHand_scale
         m_Overridden: 1
-      - m_Value: {x: 22.467487, y: 348.38748, z: 295.83847}
+      - m_Value: {x: 1.9600233, y: 142.54176, z: 38.940712}
         m_Name: Avatar_LHand_angles
         m_Overridden: 1
-      - m_Value: {x: -56.42701, y: 5.0701017, z: 38.14795}
+      - m_Value: {x: -56.730225, y: 4.2855587, z: 37.88838}
         m_Name: Avatar_LHand_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
         m_Name: Avatar_LHand_scale
         m_Overridden: 1
-      - m_Value: {x: 355.21027, y: 139.178, z: 12.2832985}
+      - m_Value: {x: 40.234573, y: 8.551218, z: 318.89917}
         m_Name: Avatar_LFoot_angles
         m_Overridden: 1
-      - m_Value: {x: -56.382, y: 3.5673158, z: 38.02545}
+      - m_Value: {x: -56.865894, y: 3.6562614, z: 37.769375}
         m_Name: Avatar_LFoot_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
         m_Name: Avatar_LFoot_scale
         m_Overridden: 1
-      - m_Value: {x: 358.5243, y: 134.51485, z: 353.03842}
+      - m_Value: {x: 358.9999, y: 76.26936, z: 358.79193}
         m_Name: Avatar_RFoot_angles
         m_Overridden: 1
-      - m_Value: {x: -56.561604, y: 3.5670524, z: 37.974594}
+      - m_Value: {x: -56.475025, y: 3.5833292, z: 37.53289}
         m_Name: Avatar_RFoot_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
@@ -10635,37 +10635,37 @@ VisualEffect:
       - m_Value: {x: 0.0000076293945, y: 7.0167104e-15, z: 7.0167096e-15}
         m_Name: Avatar_Position_angles
         m_Overridden: 1
-      - m_Value: {x: 324.54108, y: 288.82193, z: 33.05531}
+      - m_Value: {x: 351.1203, y: 310.4951, z: 330.35742}
         m_Name: Avatar_RHand_angles
         m_Overridden: 1
-      - m_Value: {x: -56.917667, y: 4.844812, z: 38.153084}
+      - m_Value: {x: -57.035362, y: 4.566231, z: 37.192265}
         m_Name: Avatar_RHand_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
         m_Name: Avatar_RHand_scale
         m_Overridden: 1
-      - m_Value: {x: 25.267397, y: 321.87964, z: 164.09346}
+      - m_Value: {x: 334.2359, y: 106.68357, z: 77.31427}
         m_Name: Avatar_LHand_angles
         m_Overridden: 1
-      - m_Value: {x: -57.552357, y: 4.920224, z: 37.555958}
+      - m_Value: {x: -57.59972, y: 4.356945, z: 37.00466}
         m_Name: Avatar_LHand_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
         m_Name: Avatar_LHand_scale
         m_Overridden: 1
-      - m_Value: {x: 1.0299264, y: 320.7198, z: 358.28156}
+      - m_Value: {x: 359.83115, y: 1.2444812, z: 1.1165999}
         m_Name: Avatar_LFoot_angles
         m_Overridden: 1
-      - m_Value: {x: -57.872154, y: 3.6253955, z: 37.767075}
+      - m_Value: {x: -57.46209, y: 3.589003, z: 36.911522}
         m_Name: Avatar_LFoot_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
         m_Name: Avatar_LFoot_scale
         m_Overridden: 1
-      - m_Value: {x: 8.087141, y: 17.675535, z: 49.43038}
+      - m_Value: {x: 14.282114, y: 17.900723, z: 344.86874}
         m_Name: Avatar_RFoot_angles
         m_Overridden: 1
-      - m_Value: {x: -57.034824, y: 3.6443985, z: 37.774464}
+      - m_Value: {x: -57.21946, y: 3.5873914, z: 36.703613}
         m_Name: Avatar_RFoot_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
@@ -10674,10 +10674,10 @@ VisualEffect:
       - m_Value: {x: -55.18705, y: 3.54, z: 40.65}
         m_Name: Center
         m_Overridden: 1
-      - m_Value: {x: -57.3844, y: 4.0329604, z: 38.150135}
+      - m_Value: {x: -57.03138, y: 4.2143, z: 36.889984}
         m_Name: EffectorPosition
         m_Overridden: 1
-      - m_Value: {x: 0, y: 0, z: 0}
+      - m_Value: {x: 0.09039688, y: -0.022057056, z: -0.22692108}
         m_Name: EffectorVelocity
         m_Overridden: 1
       - m_Value: {x: 0, y: 0, z: 0}
@@ -10692,10 +10692,10 @@ VisualEffect:
       - m_Value: {x: 0, y: 1, z: 0}
         m_Name: Wave Offset
         m_Overridden: 1
-      - m_Value: {x: 337.03534, y: 322.30603, z: 5.769311}
+      - m_Value: {x: 356.65555, y: 21.689642, z: 14.690229}
         m_Name: Center1_angles
         m_Overridden: 1
-      - m_Value: {x: -57.488167, y: 4.22286, z: 37.774834}
+      - m_Value: {x: -57.41234, y: 4.4201393, z: 36.87664}
         m_Name: Center1_position
         m_Overridden: 1
       - m_Value: {x: 1, y: 1, z: 1}
@@ -14424,7 +14424,7 @@ VisualEffect:
       - m_Value: 0.16
         m_Name: Line Range
         m_Overridden: 1
-      - m_Value: 0
+      - m_Value: 0.451
         m_Name: Line Smoothness
         m_Overridden: 1
       - m_Value: 11.29
