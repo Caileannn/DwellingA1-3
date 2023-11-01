@@ -151,12 +151,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92201582}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00022932177, y: -0.9608758, z: 0.2754073, w: 0.029471172}
-  m_LocalPosition: {x: 3.458, y: 3.815, z: 5.007}
+  m_LocalRotation: {x: -0.00022891724, y: -0.9608754, z: 0.27540857, w: 0.029471477}
+  m_LocalPosition: {x: -1.696387, y: 3.0872626, z: 4.056433}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1141447085}
+  m_Father: {fileID: 824038157}
   m_LocalEulerAnglesHint: {x: 31.955, y: -176.164, z: 1.126}
 --- !u!114 &92201584
 MonoBehaviour:
@@ -1712,6 +1712,12 @@ VisualEffect:
       - m_Value: 0.05
         m_Name: Antenna Size
         m_Overridden: 1
+      - m_Value: 1
+        m_Name: Point Smoothness
+        m_Overridden: 1
+      - m_Value: 0.359
+        m_Name: Point Metallic
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
@@ -1729,6 +1735,9 @@ VisualEffect:
         m_Overridden: 1
       - m_Value: {x: 0, y: 0, z: 0, w: 1}
         m_Name: Bubble Color
+        m_Overridden: 1
+      - m_Value: {x: 0.764151, y: 0.764151, z: 0.764151, w: 1}
+        m_Name: Point Color
         m_Overridden: 1
     m_Uint:
       m_Array: []
@@ -5993,8 +6002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 391232101}
+  m_Bindings: []
   m_VisualEffect: {fileID: 391232104}
 --- !u!73398921 &391232103
 VFXRenderer:
@@ -6004,7 +6012,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 391232099}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -10766,7 +10774,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &796738747
 Transform:
   m_ObjectHideFlags: 0
@@ -10830,7 +10838,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796738746}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -11266,6 +11274,60 @@ Transform:
   - {fileID: 368485475}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &824038155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 824038157}
+  - component: {fileID: 824038156}
+  m_Layer: 0
+  m_Name: Camera Mover
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &824038156
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824038155}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &824038157
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824038155}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.154387, y: 0.7277373, z: 0.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 92201583}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &872902548
 GameObject:
   m_ObjectHideFlags: 0
@@ -11314,7 +11376,7 @@ MonoBehaviour:
   m_Intensity: 94.9061
   m_EnableSpotReflector: 1
   m_LuxAtDistance: 1
-  m_InnerSpotPercent: 51.2
+  m_InnerSpotPercent: 55
   m_SpotIESCutoffPercent: 100
   m_LightDimmer: 1
   m_VolumetricDimmer: 5
@@ -11433,9 +11495,9 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 7735.829
+  m_Intensity: 43.25217
   m_Range: 10
-  m_SpotAngle: 98.8
+  m_SpotAngle: 134.4
   m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
@@ -11881,7 +11943,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 989421919}
   m_VisualEffect: {fileID: 989421922}
 --- !u!73398921 &989421921
 VFXRenderer:
@@ -11891,7 +11954,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 989421917}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -13206,6 +13269,12 @@ PlayableDirector:
     value: {fileID: 368485479}
   - key: {fileID: -6691445991689132819, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
     value: {fileID: 1225025838}
+  - key: {fileID: -4476516576494512876, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 908726178}
+  - key: {fileID: -8462352551235865107, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 1036136749}
+  - key: {fileID: 4708229966332613756, guid: 42435b3aeb3590d4590919ccbf032e1c, type: 2}
+    value: {fileID: 391232099}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1041483980
@@ -15042,7 +15111,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 432432461}
-  - {fileID: 92201583}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1196939948
@@ -19448,7 +19516,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1499160613
 Transform:
   m_ObjectHideFlags: 0
@@ -19512,7 +19580,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499160612}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -24047,3 +24115,4 @@ SceneRoots:
   - {fileID: 1141447085}
   - {fileID: 816011124}
   - {fileID: 1041483980}
+  - {fileID: 824038157}
