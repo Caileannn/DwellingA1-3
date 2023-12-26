@@ -134,6 +134,22 @@ MonoBehaviour:
   directionalLightsOnly:
     m_OverrideState: 0
     m_Value: 0
+--- !u!114 &-160674560527237128
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a7ff42a8c5be6646ad3975f3a54c1eb, type: 3}
+  m_Name: DiffusionProfileList
+  m_EditorClassIdentifier: 
+  active: 1
+  diffusionProfiles:
+    m_OverrideState: 1
+    m_Value: []
 --- !u!114 &-29151209572788328
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -190,6 +206,7 @@ MonoBehaviour:
   - {fileID: 4655394269607463956}
   - {fileID: 3553813949781264767}
   - {fileID: -29151209572788328}
+  - {fileID: -160674560527237128}
 --- !u!114 &691390004891524011
 MonoBehaviour:
   m_ObjectHideFlags: 3
